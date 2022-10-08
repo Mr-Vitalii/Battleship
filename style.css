@@ -1,47 +1,234 @@
 body {
-  /* background-color: black; */
+ background-color: rgba(0, 0, 0);
+ 
 }
 
-div#board {
+.board {
   position: relative;
-  width: 1024px;
-  height: 863px;
+  width: 924px;
+  height: 850px;
   margin: auto;
-  /* background: url("/img/board.jpg") no-repeat; */ 
+  left: 420px;
+  background: url("/img/board\ .jpg") no-repeat; 
 }
 
-div#messageArea {
+.radar {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  width: 780px;
+  height: 763px;
+  margin: auto;
+  right: 79px;
+  top: 35px;
+  background-image: url(/gif/radar.gif);
+  opacity: .5;
+}
+
+
+.messageArea {
+  position: absolute;
+  bottom: 760px;
+  right: 940px; 
+  font-size: 2.6em;
+  font-weight: bold;
+  text-align: center;
+  width: 500px;
+  height: 50px;
   color: rgb(83, 175, 19);
 }
+
+.messageArea.none {
+  display: none;
+  
+}
+
 table {
  position: absolute;
  left: 173px;
  top: 98px;
  border-spacing: 0px;
 }
+
 td {
   width: 92px;
   height: 92px;
 }
+
 form {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 10px;
+  right: 1480px;
   padding: 15px;
-  background-color: rgb(83, 175, 19);
+  background-color: rgb(17, 108, 15);
+  width: 270px;
+  height: 125px;
 }
-form input {
+.window {
   background-color: rgb(152, 207, 113);
   border-color: rgb(83, 175, 19);
-  font-size: 1em;
+  font-size: 1.2em;
+  width: 256px;
+  height: 30px;
 }
+
+.buttonFire{
+  background-color: rgb(138, 9, 9);
+  border-color: rgb(83, 0, 0);
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: rgb(156, 173, 156);
+  margin-top: 10px;
+  width: 85px;
+  height: 85px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+.buttonFire:hover {
+  background-color: rgb(255, 0, 0);
+  border-color: rgb(36, 1, 1);
+  color: rgb(255, 255, 255);
+
+
+}
+
 .hit {
   background: url("/img/ship.png") no-repeat center center;
 }
 
 .miss {
   background: url("/img/miss.png") no-repeat center center;
+}
+
+.fon{
+  background: url(/img/control_panel.jpg);
+  position: relative;
+  right: 900px;
+  bottom: 12px;
+  width: 900px;
+  height: 863px;
+  margin: auto;
+
+}
+
+.warning{
+  background: url(/gif/warning2.gif);
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 1430px;
+  padding: 0px;
+  width: 400px;
+  height: 261px;
+}
+
+.warning.active {
+  display: block
+}
+
+
+.countdown {
+  background: url(/gif/countdown.gif);
+  display: none;
+  position: absolute;
+  bottom: 340px;
+  right: 945px;
+  width: 400px;
+  height: 225px;
+}
+
+.countdown.active {
+  display: block
+}
+
+
+
+.planet{
+  background: url(/gif/planet.gif);
+  position: absolute;
+  top: 250px;
+  bottom: 0px;
+  right: 1450px;
+  padding: 0px;
+  width: 450px;
+  height: 250px;
+  opacity: .7;
+}
+
+.waveform{
+  background: url(/gif/sound_waves2.gif);
+  position: absolute;
+  top: 650px;
+  right: 950px;
+  padding: 0px;
+  width: 471px;
+  height: 247px;
+}
+
+.video_rocketLaunch{
+  display: none;
+  position: absolute;
+  bottom: 330px;
+  right: 882px;
+  padding: 0px;
+  width: 530px;
+  height: 250px;
+}
+
+.video_rocketLaunch.active {
+  display: block;
+}
+
+.video_rocketMiss{
+display: none;
+  position: absolute;
+  bottom: 330px;
+  right: 882px;
+  padding: 0px;
+  width: 530px;
+  height: 250px;
+}
+
+.video_rocketMiss.active {
+  display: block;
+}
+
+.video_rocketHit {
+  display: none;
+  position: absolute;
+  bottom: 330px;
+  right: 882px;
+  padding: 0px;
+  width: 530px;
+  height: 250px;
+}
+
+.video_rocketHit.active {
+  display: block;
+}
+
+.video_ShipSinking {
+  display: none;
+  position: absolute;
+  bottom: 330px;
+  right: 882px;
+  padding: 0px;
+  width: 530px;
+  height: 250px;
+}
+
+.video_ShipSinking.active {
+  display: block;
+}
+
+.audio_alarm{
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 1000px;
+  padding: 0px;
+  opacity: .5;
+}
+
+.audio_alarm.active {
+  display: block;
 }

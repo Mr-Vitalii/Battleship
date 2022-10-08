@@ -10,76 +10,99 @@
 </head>
 
 <body>
-    <div id="board">
-        <div id="messageArea"></div>
-        <table border="1">
+    <div id="board" class="board">
+        <div class="fon"></div>
+        <div class="diagram"></div>
+        <div id="countdown" class="countdown"></div>
+        <div id="warning" class="warning"></div>
+        <div class="radar"></div>
+        <div id="messageArea" class="messageArea"></div>
+        <div class="waveform"></div>
+        <div class="wrapper_video_rocketLaunch">
+            <div class="planet"></div>
+            <div id="showShot" class="rocketLaunch">
+                <video id="showShot_videoLaunch" class="video_rocketLaunch" src="/video/rocket_launch.mp4"
+                    preload="metadata" loop muted autoplay>
+                </video>
+                <video id="showShot_videoMiss" class="video_rocketMiss" src="/video/miss_video.mp4" preload="metadata"
+                    loop muted autoplay>
+                </video>
+                <video id="showShot_videoHit" class="video_rocketHit" src="/video/hit_video.mp4" preload="metadata" loop
+                    muted autoplay>
+                </video>
+                <video id="showVideo_Sank" class="video_ShipSinking" src="/video/sank.mp4" preload="metadata" loop muted
+                    autoplay>
+                </video>
+            </div>
+        </div>
+        <table border="0">
             <tr>
-                <td id="00">pp</td>
-                <td id="01">dd</td>
-                <td id="02">cc</td>
-                <td id="03">bb</td>
-                <td id="04">gg</td>
-                <td id="05">oo</td>
-                <td id="06">mm</td>
+                <td id="00"></td>
+                <td id="01"></td>
+                <td id="02"></td>
+                <td id="03"></td>
+                <td id="04"></td>
+                <td id="05"></td>
+                <td id="06"></td>
             </tr>
             <tr>
-                <td id="10">ее</td>
-                <td id="11">ее</td>
-                <td id="12">ее</td>
-                <td id="13">ee</td>
-                <td id="14">ее</td>
-                <td id="15">ее</td>
-                <td id="16">ее</td>
+                <td id="10"></td>
+                <td id="11"></td>
+                <td id="12"></td>
+                <td id="13"></td>
+                <td id="14"></td>
+                <td id="15"></td>
+                <td id="16"></td>
             </tr>
             <tr>
-                <td id="20">tt</td>
-                <td id="21">tt</td>
-                <td id="22">tt</td>
-                <td id="23">tt</td>
-                <td id="24">tt</td>
-                <td id="25">tt</td>
-                <td id="26">tt</td>
+                <td id="20"></td>
+                <td id="21"></td>
+                <td id="22"></td>
+                <td id="23"></td>
+                <td id="24"></td>
+                <td id="25"></td>
+                <td id="26"></td>
             </tr>
             <tr>
-                <td id="30">yy</td>
-                <td id="31">yy</td>
-                <td id="32">yy</td>
-                <td id="33">yy</td>
-                <td id="34">yy</td>
-                <td id="35">yy</td>
-                <td id="36">yy</td>
+                <td id="30"></td>
+                <td id="31"></td>
+                <td id="32"></td>
+                <td id="33"></td>
+                <td id="34"></td>
+                <td id="35"></td>
+                <td id="36"></td>
             </tr>
             <tr>
-                <td id="40">zz</td>
-                <td id="41">zz</td>
-                <td id="42">zz</td>
-                <td id="43">zz</td>
-                <td id="44">zz</td>
-                <td id="45">zz</td>
-                <td id="46">zz</td>
+                <td id="40"></td>
+                <td id="41"></td>
+                <td id="42"></td>
+                <td id="43"></td>
+                <td id="44"></td>
+                <td id="45"></td>
+                <td id="46"></td>
             </tr>
             <tr>
-                <td id="50">uu</td>
-                <td id="51">uu</td>
-                <td id="52">uu</td>
-                <td id="53">uu</td>
-                <td id="54">uu</td>
-                <td id="55">uu</td>
-                <td id="56">uu</td>
+                <td id="50"></td>
+                <td id="51"></td>
+                <td id="52"></td>
+                <td id="53"></td>
+                <td id="54"></td>
+                <td id="55"></td>
+                <td id="56"></td>
             </tr>
             <tr>
-                <td id="60">ww</td>
-                <td id="61">ww</td>
-                <td id="62">ww</td>
-                <td id="63">ww</td>
-                <td id="64">ww</td>
-                <td id="65">ww</td>
-                <td id="66">ww</td>
+                <td id="60"></td>
+                <td id="61"></td>
+                <td id="62"></td>
+                <td id="63"></td>
+                <td id="64"></td>
+                <td id="65"></td>
+                <td id="66"></td>
             </tr>
         </table>
         <form>
-            <input type="text" id="guessInput" placeholder="A0" autocomplete="off">
-            <input type="button" id="fireButton" value="Fire!">
+            <input type="text" id="guessInput" class="window" placeholder="A0" autocomplete="off">
+            <input type="button" id="fireButton" class="buttonFire" value="FIRE!">
         </form>
     </div>
     <script src="./index.js"></script>
